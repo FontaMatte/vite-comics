@@ -20,11 +20,11 @@ export default {
 
 <template>
 
-  <AppHeader/>
+    <AppHeader/>
 
-  <AppMain/>
-  
-  <AppFooter/>
+    <AppMain/>
+    
+    <AppFooter/>
 
 </template>
 

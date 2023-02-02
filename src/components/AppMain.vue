@@ -16,7 +16,11 @@ export default {
 
 <template>
   <main>
-    MAIN
+    <div class="container">
+      <div class="main-content">
+        --> Content goes here 
+      </div>
+    </div>
   </main>
 </template>
 

@@ -1,5 +1,13 @@
 main {
-    width: 100px;
-    height: 100px;
-    background-color: green;
+    background-color: rgba(28,28,28,255);
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        .main-content {
+            color: white;
+            padding: 50px 10px;
+        }
+    }
 }
