@@ -1,0 +1,14 @@
+@use "./partials/appHeader.scss" as *;
+@use "./partials/appMain.scss" as *;
+@use "./partials/appFooter.scss" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: red;
+}
