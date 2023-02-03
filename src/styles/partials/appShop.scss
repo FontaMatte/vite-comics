@@ -1,0 +1,36 @@
+section {
+
+    background-color: rgba(2,130,249,255);
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        .shop-menu-items {
+            display: flex;
+            padding: 20px 0;
+
+            li {
+                width: calc(100% / 5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                    img {
+                        width: 40px;
+                        margin-right: 8px;
+                    }
+                }
+                .title {
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

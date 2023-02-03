@@ -1,5 +1,7 @@
 <script>
 
+import AppShop from './AppShop.vue';
+
 export default {
 
   name: 'AppFooter',
@@ -25,13 +27,15 @@ export default {
     }
   },
   components: {
-
+    AppShop
   }
 }
 </script>
 
 <template>
   <footer>
+
+      <AppShop/>
     
       <div class="footer-top">
         <div class="container">

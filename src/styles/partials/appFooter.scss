@@ -2,7 +2,7 @@ footer {
 
     .footer-top {
 
-        background-image: url(../../assets/img/footer-bg.jpg);
+        background-image: url('../../assets/img/footer-bg.jpg');
 
         .container {
             max-width: 1000px;
@@ -17,15 +17,23 @@ footer {
                 list-style: none;
                 padding: 10px 0;
                 
-                
+                li {
+                    padding: 4px 0;
 
-                a {
-                    text-decoration: none;
-                    color: black;
+                    a {
+                        text-decoration: none;
+                        color: black;
+
+                        &:hover {
+                            color: rgba(2,130,249,255);
+                        }
+                    }
                 }
             }
         }
     }
+
+
     .footer-bottom {
 
         background-color: rgba(48,48,48,255);
