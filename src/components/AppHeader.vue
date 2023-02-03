@@ -1,14 +1,64 @@
 <script>
 
+
 export default {
 
   name: 'AppHeader',
   data() {
     return {
 
-      menuItems: ['characters','comics','movies',
-                  'tv','games','collectibles','videos',
-                  'fans','news','shop']
+      menuItems: [
+                  {
+                    title: 'characters',
+                    url: '#',
+                    active: true
+                  },
+                  {
+                    title: 'comics',
+                    url: '#',
+                    active: false
+                  },  
+                  {
+                    title: 'movies',
+                    url: '#',
+                    active: false
+                  },  
+                  {
+                    title: 'tv',
+                    url: '#',
+                    active: false
+                  },  
+                  {
+                    title: 'games',
+                    url: '#',
+                    active: false
+                  },  
+                  {
+                    title: 'collectibles',
+                    url: '#',
+                    active: false
+                  },  
+                  {
+                    title: 'videos',
+                    url: '#',
+                    active: false
+                  },
+                  {
+                    title: 'fans',
+                    url: '#',
+                    active: false
+                  },
+                  {
+                    title: 'news',
+                    url: '#',
+                    active: false
+                  },  
+                  {
+                    title: 'shop',
+                    url: '#',
+                    active: false
+                  } 
+                ]
 
     };
   },
@@ -28,11 +78,15 @@ export default {
       <div class="nav-bar">
         <ul>
           <li v-for="item in menuItems">
-            <a href="#">{{ item }}</a>
+            <a :href="item.url" :class="{active: item.active == true}">
+              {{ item.title }}
+            </a>
           </li>
         </ul>
       </div>
     </div>
+
+    <div class="jumbotron"></div>
 
   </header>
 </template>
